@@ -1,0 +1,53 @@
+.anime-view {
+  height: 100vh;
+}
+
+.anime-view__wrapper {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.anime-view__wrapper h3 {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .anime-view__wrapper {
+    padding: 10px;
+  }
+}
+
+.display-fw {
+  width: 100%;
+}
+
+@media screen and (max-width: 414px) {
+  .display-fw {
+    width: 45%;
+    margin-left: auto;
+  }
+}
+
+.display-hw {
+  width: calc(100% - 25%);
+  margin-left: auto;
+}
+
+@media screen and (max-width: 768px) and (min-width: 415px) {
+  .display-hw {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .display-hw {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=AnimeView.css.map */

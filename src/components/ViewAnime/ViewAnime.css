@@ -1,0 +1,66 @@
+.view-anime {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+}
+
+.view-anime .outer {
+  position: relative;
+  background: #fff;
+  height: 40rem;
+  width: 45rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.view-anime img {
+  position: absolute;
+  top: 0px;
+  right: -20px;
+  z-index: 0;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.view-anime .content {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  position: absolute;
+  left: 20px;
+  z-index: 3;
+}
+
+.view-anime h1 {
+  color: #111;
+}
+
+.view-anime p {
+  width: 280px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #aaa;
+  margin: 20px 0;
+}
+
+.view-anime .bg {
+  display: inline-block;
+  color: #fff;
+  background: cornflowerblue;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: .7em;
+}
+/*# sourceMappingURL=ViewAnime.css.map */

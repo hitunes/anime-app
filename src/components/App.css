@@ -1,0 +1,82 @@
+.App {
+  position: relative;
+}
+
+.App__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-top: 65px;
+  overflow-x: hidden;
+}
+
+.App-new-contact-icon, .App-delete-contact-icon {
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  height: 50px;
+  width: 50px;
+  background-color: #FF0046;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 14;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+}
+
+.App-new-contact-icon i, .App-delete-contact-icon i {
+  color: #ffffff;
+}
+
+.App-new-contact-icon:hover, .App-delete-contact-icon:hover {
+  background-color: #9d0038;
+}
+
+.App-delete-contact-icon {
+  bottom: 15%;
+}
+
+::-webkit-input-placeholder {
+  opacity: 0.6;
+}
+
+:-ms-input-placeholder {
+  opacity: 0.6;
+}
+
+::-ms-input-placeholder {
+  opacity: 0.6;
+}
+
+::placeholder {
+  opacity: 0.6;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+ul {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=App.css.map */

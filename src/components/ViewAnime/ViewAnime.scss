@@ -1,0 +1,47 @@
+.view-anime {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    .outer {
+        position: relative;
+        background: #fff;
+        height: 40rem;
+        width: 45rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+    img {
+        position: absolute;
+        top: 0px;
+        right: -20px;
+        z-index: 0;
+        animation-delay: 0.5s;
+    }
+    .content {
+        animation-delay: 0.3s;
+        position: absolute;
+        left: 20px;
+        z-index: 3
+    }
+    h1 {
+        color: #111;
+    }
+    p {
+        width: 280px;
+        font-size: 13px;
+        line-height: 1.4;
+        color: #aaa;
+        margin: 20px 0;
+    }
+    .bg {
+        display: inline-block;
+        color: #fff;
+        background: cornflowerblue;
+        padding: 5px 10px;
+        border-radius: 50px;
+        font-size: .7em;
+    }
+}
