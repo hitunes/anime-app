@@ -1,5 +1,6 @@
 import axios from 'axios'
 import * as AnimesTypes from './types'
+const PROXY_URL = 'https://cors-anywhere.herokuapp.com/'
 // actions waiting to be dispatched
 export function getAllAnimes (payload) {
   return dispatch => {
@@ -7,7 +8,7 @@ export function getAllAnimes (payload) {
       type: AnimesTypes.GET_ALL_ANIMES,
       payload: new Promise((resolve, reject) => {
         axios
-          .get(payload.url)
+          .get(PROXY_URL + payload.url, { crossdomain: true })
           .then(response => resolve(response.data))
           .catch(error => alert('check CORS or network'))
       })
@@ -20,7 +21,11 @@ export function showViewAnimesModal (payload) {
       type: AnimesTypes.SHOW_VIEW_MODAL,
       payload: new Promise((resolve, reject) => {
         axios
-          .get(`http://notmyanimelist.herokuapp.com/character/${payload.id}`)
+          .get(
+            `${PROXY_URL}http://notmyanimelist.herokuapp.com/character/${
+              payload.id
+            }`
+          )
           .then(response =>
             resolve({
               data: response.data,
