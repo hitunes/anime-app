@@ -43,7 +43,11 @@ export function register(config) {
         navigator.serviceWorker.ready.then(() => {
           console.log(
             'This web app is being served cache-first by a service ' +
+<<<<<<< HEAD
               'worker. To learn more, visit http://bit.ly/CRA-PWA'
+=======
+              'worker. To learn more, visit https://bit.ly/CRA-PWA'
+>>>>>>> 55689eea35ec10f0d2761d15c9871eaadb481c2f
           );
         });
       } else {
@@ -71,7 +75,11 @@ function registerValidSW(swUrl, config) {
               // content until all client tabs are closed.
               console.log(
                 'New content is available and will be used when all ' +
+<<<<<<< HEAD
                   'tabs for this page are closed. See http://bit.ly/CRA-PWA.'
+=======
+                  'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
+>>>>>>> 55689eea35ec10f0d2761d15c9871eaadb481c2f
               );
 
               // Execute callback
