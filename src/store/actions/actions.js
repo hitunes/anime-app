@@ -39,23 +39,10 @@ export function showViewAnimesModal (payload) {
   }
 }
 
-export const starAnimes = payload => ({
-  type: AnimesTypes.STAR_CONTACT,
-  payload
-})
-export const unStarAnimes = payload => ({
-  type: AnimesTypes.UNSTAR_CONTACT,
-  payload
-})
 export const toggleSidebar = payload => ({
   type: AnimesTypes.TOGGLE_SIDEBAR,
   payload
 })
-export const activeSidebarLink = payload => ({
-  type: AnimesTypes.ACTIVE_SIDEBAR_LINK,
-  payload
-})
-
 export const hideViewAnimesModal = payload => ({
   type: AnimesTypes.HIDE_VIEW_MODAL,
   payload

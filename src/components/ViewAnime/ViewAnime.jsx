@@ -55,9 +55,6 @@ const ViewAnime = props => {
 }
 
 const mapDispatchToProps = dispatch => ({
-  starAnimes: payload => {
-    dispatch(AnimeActions.starAnimes(payload))
-  },
   hideViewAnimesModal: payload => {
     dispatch(AnimeActions.hideViewAnimesModal(payload))
   }
